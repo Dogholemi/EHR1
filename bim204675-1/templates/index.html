@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients</title>
+</head>
+<body>
+    <h1>Patients</h1>
+    <a href="/add_patient">Add New Patient</a>
+    <ul>
+        {% for patient in patients %}
+        <li>{{ patient.name }} - {{ patient.age }} years old</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
